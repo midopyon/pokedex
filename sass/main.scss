@@ -1,5 +1,12 @@
+@import "abstracts/mixins";
 @import "abstracts/variables";
+
 @import "base/base";
 @import "base/typography";
-@import "pages/home";
+
+@import "components/buttons";
 @import "components/pokemonCard";
+
+@import "layout/footer";
+
+@import "pages/home";

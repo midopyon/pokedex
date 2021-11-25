@@ -15,7 +15,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(238, 238, 238, 0.8)), url(./images/palm-leaf.png); }
 
 .primary-heading {
-  font-family: "Miltonian Tattoo", cursive;
+  font-family: "Miltonian Tattoo";
   font-size: 8rem;
   padding: 2rem;
   background-image: linear-gradient(to right, #ffcb05, #c7a008);
@@ -23,12 +23,29 @@ body {
   color: transparent;
   -webkit-text-stroke: 0.5px #2a75bb; }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  min-width: 90vh; }
+.btn {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background-color: #ff4747;
+  color: #0e1111; }
+  .btn__text {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(14, 17, 17, 0.6);
+    cursor: pointer;
+    background-color: #c9030a;
+    color: #ebebeb; }
+  .btn:active, .btn:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(14, 17, 17, 0.35); }
 
 .card {
   height: 30rem;
@@ -40,7 +57,7 @@ body {
   .card__title {
     color: #ebebeb;
     font-size: 4rem;
-    font-family: "Miltonian Tattoo", cursive;
+    font-family: "Miltonian Tattoo";
     text-transform: capitalize; }
   .card__img {
     height: 25rem;
@@ -52,3 +69,22 @@ body {
   .card:active, .card:focus {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(14, 17, 17, 0.35); }
+
+.footer {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f7f7f7;
+  box-shadow: 0 0.5rem 1rem rgba(14, 17, 17, 0.35); }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  min-width: 90vh; }
