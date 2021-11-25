@@ -12,8 +12,7 @@ const AllPokemon = () => {
   }, []);
 
   return (
-    <div>
-      I will contain all pokemon!
+    <div className="cards">
       {Object.entries(pokemons)[3] &&
         Object.entries(pokemons)[3][1].map((pokemon, index) => {
           return <PokemonCard key={index} id={index + 1} {...pokemon} />;

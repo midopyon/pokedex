@@ -1,13 +1,54 @@
-body {
+*,
+*::after,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  padding: 0;
+  box-sizing: inherit; }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  text-align: center;
+  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(238, 238, 238, 0.8)), url(./images/palm-leaf.png); }
+
+.primary-heading {
+  font-family: "Miltonian Tattoo", cursive;
+  font-size: 8rem;
+  padding: 2rem;
+  background-image: linear-gradient(to right, #ffcb05, #c7a008);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0.5px #2a75bb; }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  min-width: 90vh; }
+
+.card {
+  height: 30rem;
+  background-color: #3c5aa6;
+  margin: 2rem;
+  border-radius: 1rem;
+  flex: 0 0 24%;
+  transition: all 0.2s; }
+  .card__title {
+    color: #ebebeb;
+    font-size: 4rem;
+    font-family: "Miltonian Tattoo", cursive;
+    text-transform: capitalize; }
+  .card__img {
+    height: 25rem;
+    width: 25rem; }
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(14, 17, 17, 0.6);
+    cursor: pointer; }
+  .card:active, .card:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(14, 17, 17, 0.35); }
