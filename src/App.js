@@ -5,12 +5,10 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 const App = () => {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/pokemon/:id" element={<Pokemon />} />
-          <Route path="/" element={<AllPokemon />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route exact path="/" element={<AllPokemon />} />
+        <Route path="/pokemon/:id" element={<Pokemon />} />
+      </Routes>
     </div>
   );
 };

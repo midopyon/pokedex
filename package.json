@@ -1,4 +1,5 @@
 {
+  "homepage": "https://midopyon.github.io/pokedex/",
   "name": "pokedex",
   "version": "0.1.0",
   "private": true,
@@ -6,6 +7,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.0.2",
@@ -17,7 +19,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compile:sass": "node-sass sass/main.scss src/index.css -w"
+    "compile:sass": "node-sass sass/main.scss src/index.css -w",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"   
   },
   "eslintConfig": {
     "extends": [
